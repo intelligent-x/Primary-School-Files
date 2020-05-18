@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html, charset=utf-8">
+	<title>毕业赠言</title>
+	<style type="text/css">
+		* {
+			padding: 0;
+			margin: 0;
+		}
+
+		ul, li {
+			list-style: none;
+		}
+
+		ul {
+			display: block;
+			background-color: #69C;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate( -50%, -50% );
+		}
+
+		@media screen and ( min-width: 600px ) {
+			ul {
+				width: 50%;
+			}
+		}
+
+		@media screen and ( max-width: 600px ){
+			ul {
+				width: 75%;
+			}
+		}
+
+		@media screen and ( min-height: 600px ){
+			ul {
+				height: 50%;
+			}
+		}
+
+		@media screen and ( max-height: 600px ){
+			ul {
+				height: 75%;
+			}
+		}
+
+		li {
+			width: 100%;
+			height: 33.3%;
+			text-align: center;
+			transition: all .2s linear 0s;
+		}
+
+		li:hover {
+			background-color: #FFF;
+			box-shadow: 0 0 0 5px #69C inset;
+		}
+
+		a {
+			display: block;
+			width: 100%;
+			height: 100%;
+			color: #FFF;
+			text-decoration: none;
+			font-weight: bold;
+			font-family: "仿宋";
+			transition: all .1s linear 0s;
+		}
+
+		a:hover {
+			color: #69C;
+		}
+
+		a {
+			font-size: 30px;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li>
+			<a href="三致言/致老师.html">致老师</a>
+		</li>
+		<li>
+			<a href="三致言/致同学.html">致同学</a>
+		</li>
+		<li>
+			<a href="三致言/致学校.html">致学校</a>
+		</li>
+	</ul>
+	<script type="text/javascript">
+		for( item of document.getElementsByTagName("li") ){
+			item.style.lineHeight = `${item.offsetHeight}px`;
+		}
+	</script>
+</body>
+</html>
